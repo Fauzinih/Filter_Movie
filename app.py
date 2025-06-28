@@ -60,10 +60,10 @@ st.subheader("🧮 Perhitungan Manual Setiap Film")
 
 def logika_manual(row):
     if row['Usia'] <= usia_pengguna:
-        if row['Year'] > 2010:
-            return "✅ Boleh (Usia ≤ {} dan Year > 2010)".format(usia_pengguna)
+        if row['Year'] >= tahun:
+            return "✅ Boleh (Usia ≤ {} dan Year > tahun)".format(usia_pengguna)
         else:
-            return "❌ Tidak Boleh (Year ≤ 2010)"
+            return "❌ Tidak Boleh (Year ≤ tahun)"
     else:
         return "❌ Tidak Boleh (Usia > {})".format(usia_pengguna)
 
